@@ -6,7 +6,7 @@ WORKDIR /app
 
 COPY requirements.txt /app/
 RUN pip install gunicorn
-RUN pip install setuptools
+RUN pip install setuptools 
 RUN pip install --upgrade pip && \
     pip install -r requirements.txt
 
